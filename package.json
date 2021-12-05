@@ -1,7 +1,6 @@
 {
   "name": "main",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "jest",
@@ -15,5 +14,17 @@
   },
   "devDependencies": {
     "jest": "^25.1.0"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ening6649/zookeeper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ening6649/zookeeper/issues"
+  },
+  "homepage": "https://github.com/ening6649/zookeeper#readme",
+  "description": ""
 }
