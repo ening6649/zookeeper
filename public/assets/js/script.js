@@ -27,10 +27,15 @@ const handleAnimalFormSubmit = event => {
   }
   const animalObject = { name, species, diet, personalityTraits };
 
+  // dont have to specifiy the full url because the request is coming from the server
   fetch('api/animals', {
+    // specify the type of request, then goes to the add new animals json file
     method: 'POST',
     headers: {
       Accept: 'application/json',
+      // inform the request that this will be json data, 
+      // so stringified json data will be added to animal object of the body property
+      // will not receive req.body otherwise
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(animalObject)
